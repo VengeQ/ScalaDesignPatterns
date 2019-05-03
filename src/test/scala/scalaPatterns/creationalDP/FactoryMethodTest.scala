@@ -1,4 +1,4 @@
-package scalaPatterns.creationalDP
+package com.vengeq.scalaPatterns.creationalDP
 
 import com.vengeq.scalaPatterns.creationalDP.factorymethod.{DatabaseClient, MysqlClient, OraSqlClient, PgSqlClient}
 import org.scalatest.FunSuite

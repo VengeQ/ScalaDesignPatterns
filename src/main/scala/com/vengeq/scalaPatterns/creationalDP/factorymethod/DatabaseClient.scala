@@ -1,6 +1,7 @@
 package com.vengeq.scalaPatterns.creationalDP.factorymethod
 
-import com.vengeq.scalaPatterns.creationalDP.{SimpleConnection, SimpleMysqlConnection, SimpleOraSqlConnection, SimplePgSqlConnection}
+import com.vengeq.scalaPatterns.creationalDP.abstractfactory.{SimpleConnection, SimpleMysqlConnection, SimpleOraSqlConnection, SimplePgSqlConnection}
+import com.vengeq.scalaPatterns.creationalDP.abstractfactory.{SimpleMysqlConnection, SimpleOraSqlConnection, SimplePgSqlConnection}
 
 
 abstract class DatabaseClient {

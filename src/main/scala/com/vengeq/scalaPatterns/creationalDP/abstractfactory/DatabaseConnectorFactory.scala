@@ -1,6 +1,6 @@
 package com.vengeq.scalaPatterns.creationalDP.abstractfactory
 
-import com.vengeq.scalaPatterns.creationalDP.{SimpleConnection, SimpleMysqlConnection, SimpleOraSqlConnection, SimplePgSqlConnection}
+import com.vengeq.scalaPatterns.creationalDP.abstractfactory
 
 trait DatabaseConnectorFactory {
   def connect(): SimpleConnection
@@ -15,4 +15,9 @@ class PgSqlFactory extends DatabaseConnectorFactory {
 
 class OraSqlFactory extends DatabaseConnectorFactory {
   override def connect(): SimpleConnection = new SimpleOraSqlConnection
+}
+
+class YetAnotherSqlFactory extends DatabaseConnectorFactory{
+  override def connect(): SimpleConnection = new SimpleOraSqlConnection
+
 }
