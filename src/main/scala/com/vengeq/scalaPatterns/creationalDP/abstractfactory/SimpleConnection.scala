@@ -7,9 +7,8 @@ trait SimpleConnection {
 }
 class SimpleMysqlConnection extends SimpleConnection {
   override def getName(): String = "SimpleMysqlConnection"
-  override def executeQuery(query: String): Unit = {
-    System.out.println(s"Executing the query '$query' the MySQL way.")
-  }
+  override def executeQuery(query: String): Unit = System.out.println(s"Executing the query '$query' the MySQL way.")
+
   override def getTrace(): String = ("Trace from MySql instance")
 }
 class SimplePgSqlConnection extends SimpleConnection {

@@ -1,3 +1,4 @@
+
 package com.vengeq.scalaPatterns.creationalDP
 
 import com.vengeq.scalaPatterns.creationalDP.singleton.StringUtils
